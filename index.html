@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="index1.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="index2.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="index3.css" media="screen" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>淘宝</title>
 </head>
 <body>
@@ -79,7 +82,6 @@
                     </li>
                 </ul>
             </div>
-            </div>
         </div>
     </div>
     <div id="a2">
@@ -142,9 +144,7 @@
     <div id="a3">
         <div id="a33">
             <ul class="a11ul3">
-                <p id="ztsc">
-                    <a>主题市场</a>
-                </p>
+                <p id="ztsc"><a>主题市场</a></p>
                 <li class="a3ulli" id="a3ulli1">
                     <a class="a3ullia">天猫</a>
                 </li>
@@ -284,9 +284,25 @@
                 </ul>
             </div>
             <div id="a42">
-                <div id="lunbotu1">
-                    <img src="jiajudt.jpg" id="dt1">
+                <div id="container">
+                    <div id="list"  style="left : -520px">
+                        <img src="5.jpg" alt="1.jpg" />
+                        <img src="1.jpg" alt="1.jpg" />
+                        <img src="2.jpg" alt="1.jpg" />
+                        <img src="3.jpg" alt="1.jpg" />
+                        <img src="5.jpg" alt="1.jpg" />
+                        <img src="1.jpg" alt="1.jpg" />
+                    </div>
+                    <div id="buttons">
+                        <span count="1" class="on"></span>
+                        <span count="2" class=""></span>
+                        <span count="3" class=""></span>
+                        <span count="4" class=""></span>
+                    </div>
+                    <a  id="prev" class="arrow">&lt;</a>
+                    <a  id="next" class="arrow">&gt;</a>
                 </div>
+
                 <div class="clearf"></div>
                 <img src="tmall.png" id="tmalll">
                 <div id="stmwz">理想生活上天猫</div>
@@ -316,7 +332,7 @@
                     <div class="clearf"></div>
                     <ul id="a44ul2">
                         <li class="a44ulli2" id="a44ulli21">登陆</li>
-                        <li class="a44ulli2">注册</li>
+                        <li class="a44ulli2 btn">注册</li>
                         <li class="a44ulli2">开店</li>
                     </ul>
                     <div class="clearf"></div>
@@ -403,7 +419,26 @@
             </div>
         </div>
     </div>
+<div id="app" class = "bg">
+    <div class="seton">
+            <div class = "contentt">
+                <h1>欢迎登陆</h1>
+                <form>
+                    <div class="setonin">
+                        <input type="text" v-model="a" class="setname"><p v-text="comp"></p>
+                        <input type="password" v-model="b" class="setpassword"><p v-text="password"></p>
+                        <br>
+                        <button class=" delete">注册</button>
+                    </div>
 
+                </form>
+            </div>
+    </div>
+</div>
 </body>
-
+<script src="jquery.js"></script>
+<script src="./node_modules/vue/dist/vue.js"></script>
+<script src="index1.js"></script>
+<script src="index2.js"></script>
+<script src="index3.js"></script>
 </html>
